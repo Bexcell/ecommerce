@@ -1,0 +1,44 @@
+#cont {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+button {
+    margin: 2px;
+    border-radius: 2px;
+    background: gold;
+}
+
+
+
+h1{
+    display:flex;
+    font-size: 60px;
+    font-family:Elena; 
+    justify-content: center;
+}
+
+i.fas {
+    color: red;
+    margin: 2px;
+
+}
+
+i.far {
+    margin: 2px;
+    color: gold;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #DDD1A3;
+    text-align: center;
+}
+
