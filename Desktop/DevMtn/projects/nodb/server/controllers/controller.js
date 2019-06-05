@@ -8,11 +8,12 @@ module.exports = {
     },
 deleted: (req, res)=> {
   ///delete
-    const index = data.findIndex(item => item.id === +req.params.id)
+    const index = data.findIndex(item => item.id === +req.params.id) //////req.param
     const gone = data.splice(index, 1)
     res.json(data)
     
 },
+
 
 
 comment:(req, res)=>{
@@ -21,7 +22,7 @@ comment:(req, res)=>{
    res.json(data)
 },
 postComment: (req, res)=>{
-     const index = data.findIndex(item => item.id === req.body.id)
+     const index = data.findIndex(item => item.id === req.body.id) ///req.body
      data[index].comment = req.body.inputs
      res.json(data)
 }

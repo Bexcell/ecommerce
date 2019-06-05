@@ -2,11 +2,11 @@
 
 const { getdata,deleted, comment,postComment } = require('./controllers/controller')
 const express = require('express');
-
+///express
 const app = express() 
-app.use(express.json())
+app.use(express.json()) // body parcer 
 
-
+///crud
 app.get('/api/getdata', getdata)
 app.delete('/api/delete:id', deleted)
 app.put('/api/appreciate:id', comment)

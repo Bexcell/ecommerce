@@ -1,6 +1,6 @@
 import React, {Component}from 'react'
 import axios from 'axios'
-
+//stateful component
 class Post extends Component {
     constructor(){
         super()
@@ -23,7 +23,7 @@ class Post extends Component {
             }
     
             
-
+//.map-mappedData
      render(){
        console.log(this.state.appreciate)
          const mappedData = this.state.data.map(item => {
@@ -62,7 +62,7 @@ class Post extends Component {
                         //  e.preventDefault()
                         axios.post("/api/postcomment", {
                             id: item.id,
-                            inputs: this.state.appreciate
+                            inputs: this.state.appreciate  //const appreciate 
                      }).then(res => {
                             this.setState({
                                   data: res.data
